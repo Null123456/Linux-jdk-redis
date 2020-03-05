@@ -36,5 +36,6 @@ redis安装启动：
 将redis.conf配置文件拷贝到bin目录下，切换到bin目录下
 由于配置文件中默认为前端模式启动，需手动编辑修改配置文件中内容：vi redis.conf   按pgDn向下翻找到daemonize no改为yes
 进行后端模式启动：./redis-server redis.conf
+然后查看是否成功启动服务：ps -aux|grep redis
 
 连接：https://blog.csdn.net/huangyuhuangyu/article/details/80263525
